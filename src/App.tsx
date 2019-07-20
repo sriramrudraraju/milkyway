@@ -1,12 +1,14 @@
 import React from "react";
 
-import { Test } from "./components/test/test.component";
+import { ReactState } from "./components/react-state/react-state.component";
+import { MobxStore } from './components/mobx-store/mobx-store.component';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <h1>MilkyWay</h1>
-      <Test />
+      <ReactState />
+      <MobxStore />
     </div>
   );
 }

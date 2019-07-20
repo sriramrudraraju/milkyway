@@ -1,19 +1,19 @@
 import React, { FC, useState } from "react";
 
-import { useStyles } from "./test.styles";
+import { useStyles } from "./react-state.styles";
 
-export const Test = () => {
+export const ReactState = () => {
   const classes = useStyles();
 
   const [count, setCount] = useState(0);
   return (
-    <React.Fragment>
+    <div>
       <button
         className={classes.button}
         onClick={() => setCount(count + 1)}
       >
-        Click {count}
+        React state Click {count}
       </button>
-    </React.Fragment>
+    </div>
   );
 };
