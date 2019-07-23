@@ -2,7 +2,7 @@ import React, { FC, useState } from "react";
 
 import { useStyles } from "./react-state.styles";
 
-export const ReactState = () => {
+export const ReactState: FC = () => {
   const classes = useStyles();
 
   const [count, setCount] = useState(0);
