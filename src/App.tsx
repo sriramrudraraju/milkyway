@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import { ReactState } from "./components/react-state/react-state.component";
 import { MobxStore } from './components/mobx-store/mobx-store.component';
+import { SampleApi } from './components/sample-api/sample-api.component';
 
 const App = () => {
   return (
@@ -18,11 +19,15 @@ const App = () => {
               <li>
                 <Link to="/mobxStore/">Mobx Store</Link>
               </li>
+              <li>
+                <Link to="/sampleApi/">Sample Api</Link>
+              </li>
             </ul>
           </nav>
 
           <Route path="/" exact component={ReactState} />
           <Route path="/mobxStore/" component={MobxStore} />
+          <Route path="/sampleApi/" component={SampleApi} />
         </div>
       </Router>
     </div>
