@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 
 import { observer } from 'mobx-react';
+import { Button } from '@material-ui/core';
 
 import { useAppStore } from '../../stores';
 
@@ -13,12 +14,14 @@ export const MobxStore: FC = observer(
 
     return (
       <div>
-        <button
+        <Button
           className={classes.button}
+          color="secondary"
+          variant="contained"
           onClick={() => appStore.incrementCounter()}
         >
           Mobx store Click {appStore.counter}
-        </button>
+        </Button>
       </div>
     )
   }
