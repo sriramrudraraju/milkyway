@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { ThemeProvider } from '@material-ui/styles';
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router } from 'react-router-dom';
 
 import { Header } from '../components/header/header.component';
 import { Nav } from '../components/nav/nav.component';
@@ -24,6 +24,6 @@ const App = () => {
       </Router>
     </ThemeProvider>
   );
-}
+};
 
 export default App;

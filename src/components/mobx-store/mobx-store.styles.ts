@@ -2,6 +2,6 @@ import { makeStyles } from '@material-ui/core/styles';
 
 export const useStyles = makeStyles(() => ({
   button: {
-    padding: 8
-  }
+    padding: 8,
+  },
 }));

@@ -1,8 +1,8 @@
-import React, { FC, useState } from "react";
+import React, { FC, useState } from 'react';
 
 import { Button } from '@material-ui/core';
 
-import { useStyles } from "./react-state.styles";
+import { useStyles } from './react-state.styles';
 
 export const ReactState: FC = () => {
   const classes = useStyles();

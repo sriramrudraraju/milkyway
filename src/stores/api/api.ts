@@ -1,10 +1,12 @@
 import axios from 'axios';
 
 export class Api {
+  private readonly axios = axios;
+
   public get(url: string) {
-    return axios.get(url);
+    return this.axios.get(url);
   }
   public post<T>(url: string, body: T) {
-    return axios.post(url, body)
+    return this.axios.post(url, body);
   }
 }

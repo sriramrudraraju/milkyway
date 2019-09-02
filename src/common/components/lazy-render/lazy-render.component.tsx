@@ -9,16 +9,12 @@ interface LazyRendererProps {
 
 export const LazyRenderer = ({ children, height }: LazyRendererProps) => {
   const [ref, inView] = useInView({
-    triggerOnce: true
+    triggerOnce: true,
   });
 
   return (
     <div ref={ref} style={{ minHeight: height }}>
-      {
-        inView
-          ? children
-          : null
-      }
+      {inView ? children : null}
     </div>
-  )
-}
+  );
+};

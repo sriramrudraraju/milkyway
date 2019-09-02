@@ -1,9 +1,9 @@
 import React from 'react';
-import { withRouter, RouteComponentProps } from "react-router-dom";
+import { withRouter, RouteComponentProps } from 'react-router-dom';
 import { AppBar, Tabs, Tab } from '@material-ui/core';
 
 const NavComponent = (props: RouteComponentProps) => {
-  const [value, setValue] = React.useState("/");
+  const [value, setValue] = React.useState('/');
 
   function handleChange(event: React.ChangeEvent<{}>, newValue: string) {
     setValue(newValue);
@@ -28,6 +28,6 @@ const NavComponent = (props: RouteComponentProps) => {
       </AppBar>
     </React.Fragment>
   );
-}
+};
 
 export const Nav = withRouter(NavComponent);
