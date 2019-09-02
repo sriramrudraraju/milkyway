@@ -16,9 +16,7 @@ export class AppStore {
     return this._counter;
   }
 
-  public async sampleApiCall() {
-    const response = await this._api.get('/users');
-    console.log(response);
-  }
-
+  // public async sampleApiCall() {
+  //   const response = await this._api.get('/users');
+  // }
 }

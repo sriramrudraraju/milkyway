@@ -11,16 +11,21 @@ import { useStyles } from './header.styles';
 
 export const Header: FC = () => {
   const classes = useStyles();
-  
+
   return (
     <AppBar position="static">
       <Toolbar>
-        <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+        <IconButton
+          edge="start"
+          className={classes.menuButton}
+          color="inherit"
+          aria-label="menu"
+        >
           <MenuIcon />
         </IconButton>
         <Typography variant="h6" className={classes.title}>
           TA Arts
-          </Typography>
+        </Typography>
         <IconButton
           aria-label="account of current user"
           aria-controls="menu-appbar"
@@ -32,4 +37,4 @@ export const Header: FC = () => {
       </Toolbar>
     </AppBar>
   );
-}
+};

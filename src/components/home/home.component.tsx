@@ -24,5 +24,5 @@ export const Home: FC = () => {
         <HomeImage />
       </LazyRenderer>
     </div>
-  )
+  );
 };
